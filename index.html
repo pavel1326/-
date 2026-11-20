@@ -7,27 +7,52 @@
 <meta name="description" content="Трубников Павел Александрович — юридическая помощь в Ногинске, Москве и Московской области.">
 <title>Трубников Павел Александрович | Юридическая помощь</title>
 
+<!-- Подтверждение прав в Яндекс.Вебмастере -->
+<meta name="yandex-verification" content="847e591d6a046908" />
+
 <!-- Favicon (Иконка вкладки) -->
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23101b2b'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='serif' font-size='60' fill='%23c9a66b'>Т</text></svg>">
 
-<!-- Микроразметка Schema.org для SEO -->
+<!-- Микроразметка Schema.org (Организация и Человек) для SEO -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Attorney",
-  "name": "Трубников Павел Александрович",
-  "description": "Юридическая помощь в Ногинске, Москве и Московской области. Семейные, гражданские, имущественные и другие споры.",
-  "telephone": "+7 (925) 879-96-51",
-  "email": "ptrubnikov@mail.ru",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "ул. 3-го Интернационала, д. 236, каб. 104",
-    "addressLocality": "Ногинск",
-    "addressRegion": "Московская область",
-    "addressCountry": "RU"
-  },
-  "areaServed": ["Ногинск", "Москва", "Московская область"],
-  "priceRange": "$$"
+  "@graph": [
+    {
+      "@type": "Attorney",
+      "@id": "https://trubnikov-law.ru/#organization",
+      "name": "Юридическая практика Трубникова П.А.",
+      "url": "https://trubnikov-law.ru/",
+      "telephone": "+7 (925) 879-96-51",
+      "email": "ptrubnikov@mail.ru",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ул. 3-го Интернационала, д. 236, каб. 104",
+        "addressLocality": "Ногинск",
+        "addressRegion": "Московская область",
+        "addressCountry": "RU"
+      },
+      "areaServed": ["Ногинск", "Москва", "Московская область"]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://trubnikov-law.ru/#person",
+      "name": "Трубников Павел Александрович",
+      "jobTitle": "Юрист",
+      "worksFor": {
+        "@id": "https://trubnikov-law.ru/#organization"
+      },
+      "telephone": "+7 (925) 879-96-51",
+      "email": "ptrubnikov@mail.ru",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ул. 3-го Интернационала, д. 236, каб. 104",
+        "addressLocality": "Ногинск",
+        "addressRegion": "Московская область",
+        "addressCountry": "RU"
+      }
+    }
+  ]
 }
 </script>
 
@@ -60,7 +85,7 @@ a { color: inherit; text-decoration: none; }
 button { font: inherit; cursor: pointer; }
 .container { width: min(1160px, calc(100% - 44px)); margin: 0 auto; }
 
-/* Фоновый узор (юридическая тематика - линии и ромбы) */
+/* Фоновый узор */
 .bg-pattern {
   background-color: var(--cream);
   background-image: 
@@ -533,7 +558,6 @@ footer { background: #0b1421; color: #9da8b5; padding: 30px 0; font-size: 11px; 
   </div>
 </section>
 
-<!-- БЛОК: ГАРАНТИИ -->
 <section class="guarantees-section fade-in" id="guarantees">
   <div class="container">
     <div class="section-heading" style="text-align: center; margin: 0 auto 50px;">
@@ -745,7 +769,6 @@ footer { background: #0b1421; color: #9da8b5; padding: 30px 0; font-size: 11px; 
           <input type="text" name="name" placeholder="Ваше имя" required>
         </div>
         <div class="form-group">
-          <!-- Добавлен id для маски телефона -->
           <input type="tel" name="phone" id="phoneInput" placeholder="+7 (___) ___-__-__" required>
         </div>
         <div class="form-group">
